@@ -1,0 +1,134 @@
+.swiper{
+	width: 375px;
+	height: 188px;
+	background-image: url(../img/图.jpg);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+	margin-top: 74px;
+}
+/* 图片最外框的大小 */
+.iconList{
+	width: 375px;
+	height: 160px ;
+	display: flex; /* 弹性布局*/
+	flex-wrap: wrap; /* 可以换行*/
+	background-color: #FFFFFF;
+}
+/* 图片的大小 */
+.iconList .iconItem{
+	width: 20%; /* 因为共10个，一个占20%*/
+	height: 80px;
+}
+/* 因为它跟父元素，把以就 100% */
+.iconItem>img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/* ad  banner */
+.banner{
+	width: 375px;
+	height: 265px;
+	padding-top: 5px;
+	display: flex; /* 弹性布局*/
+	justify-content: space-between; /* 两边靠，中间有间距*/
+}
+/* 左边 大小*/
+.banner .lbanner{
+	width:186px;
+	height:265px;
+	background-image: url(../img/img1.webp);
+	background-size: 100%;
+}
+/* 右边 大小*/
+.banner .rbanner{
+	width:186px;
+	height:265px;
+	display: flex;
+	flex-direction: column;/* 垂直显示，正如一个列一样。 */
+	justify-content: space-between;
+}
+
+/* 右上图片 */
+.banner .rbanner .rtbanner{
+	width:186px;
+	height: 130px;
+	background-image: url(../img/img3.webp);
+	background-size: 100% 100%;
+}
+/* 右下图片 */
+.banner .rbanner .rbbanner{
+	width:186px;
+	height: 130px;
+	background-image: url(../img/img2.webp);
+	background-size: 100% 100%;
+}
+
+/* 每日精选 */
+/* 不知道高，让它自己调整 */
+.jx{
+	margin-top:8px;
+	width: 375px;
+	display: flex; /* 弹性布局*/
+	flex-direction: column; /* 垂直分布，上下*/
+	background-color: #FFFFFF;
+	padding-bottom: 60px;
+}
+/* 上面图片 top */
+.jxad{
+	width: 375px;
+	height: 230px;
+	background-image: url(../img/jxtop.webp);
+	background-size: 100% 100%;
+	/* background-color: #FFFFFF; */
+}
+
+/* 产品列表 */
+.pdList{
+	width: 375px;
+	display: flex; /* 弹性布局*/
+	flex-wrap: wrap; /* 可换行*/
+	
+}
+/* 列表下的大小 */
+.pdList .pdItem{
+	width: 50%; /* 因为一行2个产品*/
+	height: 253px ; /* 图片加文字*/
+	padding: 3px 3px;
+	display: flex; 
+	flex-direction: column; /* 垂直，上下*/
+	align-items: center; /* 侧轴（纵轴）方向上的对齐方式。*/
+}
+/* 图片大小 */
+.pdList .pdItem img{
+	width: 100%;
+	height: auto;
+}
+
+/* 产品文字的大小和样式 */
+.pdList .pdItem .title{
+	margin-top: 5px;
+	font-size: 15px;
+	color: rgba(0,0,0,.87);
+}
+.pdList .pdItem .brief{
+	font-size: 11px;
+	color: color: rgba(0,0,0,.54);
+}
+.pdList .pdItem .price{
+	font-size: 15px;
+	color: #ea625b;
+}
+.pdList .pdItem .buyBtn{
+	width: 105px;
+	height: 31px ;
+	text-align: center;/* 文本对齐方式 */
+	line-height: 31px;
+	color: #FFFFFF;
+	background-color: #EA625B;
+	border-radius: 3px;
+	font-size: 14px;
+}
+

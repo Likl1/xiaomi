@@ -1,0 +1,72 @@
+.footer{
+	width: 375px;
+	display: flex; /* 弹性布局*/
+	background-color: #FFFFFF;
+	box-shadow: 0 -2px 10px #CCCCCC;
+	/* 固定定位 */
+	position: fixed;
+	left:0;
+	bottom: 0;
+}
+
+/* 每个框的大小 */
+.footer .fIcon{
+	width: 25%; /* 因为4个*/
+	height: 52px;
+	display: flex;
+	flex-direction: column; /*垂直分布，因为有图片和文字*/
+	align-items: center;/*侧轴（纵轴）方向上的对齐  */
+	justify-content: center; /* 主轴（横轴）方向上的对齐方式*/
+}
+
+/* 字体大小 */
+.footer .fIcon span{
+	font-size: 12px;
+	color: #CCC;
+}
+/* 图片要放的位置大小 */
+.footer .fIcon .img{
+	width: 21px;
+	height: 21px;
+	background-size: 100% ;
+}
+
+.footer .fIcon:nth-child(1) .img{
+	background-image: url(../img/d1.png);
+}
+.footer .fIcon:nth-child(2) .img{
+	background-image: url(../img/d2.png);
+}
+.footer .fIcon:nth-child(3) .img{
+	background-image: url(../img/d3_3.png);
+}
+.footer .fIcon:nth-child(4) .img{
+	background-image: url(../img/d4.png);
+}
+
+.footer .fIcon:nth-child(1):hover .img{
+	background-image: url(../img/d1_1.png);
+}
+.footer .fIcon:nth-child(2):hover .img{
+	background-image: url(../img/d2_2.png);
+}
+.footer .fIcon:nth-child(3):hover .img{
+	background-image: url(../img/d3.png);
+}
+.footer .fIcon:nth-child(4):hover .img{
+	background-image: url(../img/d4_4.png);
+}
+
+
+.footer .fIcon:nth-child(1):hover span{
+	color: #FF6700;
+}
+.footer .fIcon:nth-child(2):hover span{
+	color: #FF6700;
+}
+.footer .fIcon:nth-child(3):hover span{
+	color: #FF6700;
+}
+.footer .fIcon:nth-child(4):hover span{
+	color: #FF6700;
+}

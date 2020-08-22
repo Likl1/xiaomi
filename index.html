@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!-- 设置浏览器窗口的分辨率为设计稿的分辨率 -->
+		<meta name="viewport" content="width=375 ,user-scalable=no"/>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	<body>
+	</head>
+	<!-- .header>(.headerTop>(.logo+(.search>(.icon+input))+.user))+(.headerNav>(a*6+span.xhicon)) -->
+		<div class="header">
+			<div class="headerTop">
+				<div class="logo"></div>
+				<div class="search">
+					<div class="icon"></div>
+					<input type="text" placeholder="搜索商品名称">
+				</div>
+				<div class="user"></div>
+			</div>
+			<div class="headerNav">
+				<a href="" class="action">推荐</a>
+				<a href="">手机</a>
+				<a href="">智能</a>
+				<a href="">电视</a>
+				<a href="">笔记本</a>
+				<a href="">家电</a>
+				<!-- 绑定 -->
+				<input type="checkbox" hidden="hidden" id="choose"  value="" />
+				<!-- label 注： 一定要用 for来对应要绑定的 -->
+				<label for="choose"  class="xhicon"></label>
+				
+				<div class="xhk">
+					<div class="xhkMain">
+						<div class="xhkTop">
+							全部
+						</div>
+						<div class="xhkList">
+							<a href="" class="action">推荐</a>
+							<a href="">手机</a>
+							<a href="">智能</a>
+							<a href="">电视</a>
+							<a href="">笔记本</a>
+							<a href="">家电</a>
+							<a href="">生活周边</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+
+		<!-- 轮播 -->
+		<div class="swiper"></div>
+			<!-- 
+				图标列表
+				.iconList>(a.iconItem>img[src="img/icon$.webp"])*10
+		 -->
+		 <div class="iconList">
+			<a href="" class="iconItem"><img src="img/icon1.png" alt=""></a>
+			<a href="" class="iconItem"><img src="img/icon2.webp" alt=""></a>
+			<a href="" class="iconItem"><img src="img/icon3.webp" alt=""></a>
+			<a href="" class="iconItem"><img src="img/icon4.webp" alt=""></a>
+			<a href="" class="iconItem"><img src="img/icon5.webp" alt=""></a>
+			<a href="" class="iconItem"><img src="img/6.webp" alt=""></a>
+			<a href="" class="iconItem"><img src="img/icon7.png" alt=""></a>
+			<a href="" class="iconItem"><img src="img/icon8.png" alt=""></a>
+			<a href="" class="iconItem"><img src="img/icon9.webp" alt=""></a>
+			<a href="" class="iconItem"><img src="img/icon10.png" alt=""></a>
+		 </div>
+
+
+		<!-- ad 广告 banner
+			.banner>(.lbanner+(.rbanner>(.rtbanner+.rbbanner)))
+			最外面一个大框，大框里分左右两个框，右边框里再分两个上下框
+		 -->
+		 <div class="banner">
+		 	<div class="lbanner"></div>
+		 	<div class="rbanner">
+		 		<div class="rtbanner"></div>
+		 		<div class="rbbanner"></div>
+		 	</div>
+		 </div>	
+		 
+		 <!-- 每日精选
+		 .jx>(.jxad+(.pdList>(.pdItem>(img[src="img/jx$.jpg"]+.title+.brief+.price+.buyBtn))*4))
+			一个大框整体-> 上面广告-> 下面列表框 ->列表框中包含着，图片，文字价格-->
+		 <div class="jx">
+		 	<div class="jxad"></div>
+		 	<div class="pdList">
+		 		<div class="pdItem">
+		 			<img src="img/jx1.jpg" alt="">
+		 			<div class="title">小米10 Pro</div>
+		 			<div class="brief">骁龙865 / 50倍变焦</div>
+		 			<div class="price">4999</div>
+		 			<div class="buyBtn"> 立即购买</div>
+		 		</div>
+		 		<div class="pdItem">
+		 			<img src="img/jx2.jpg" alt="">
+		 			<div class="title">小米10 Pro</div>
+		 			<div class="brief">骁龙865 / 50倍变焦</div>
+		 			<div class="price">4999</div>
+		 			<div class="buyBtn"> 立即购买</div>
+		 		</div>
+		 		<div class="pdItem">
+		 			<img src="img/jx3.jpg" alt="">
+		 			<div class="title">小米10 Pro</div>
+		 			<div class="brief">骁龙865 / 50倍变焦</div>
+		 			<div class="price">4999</div>
+		 			<div class="buyBtn"> 立即购买</div>
+		 		</div>
+		 		<div class="pdItem">
+		 			<img src="img/jx4.jpg" alt="">
+		 			<div class="title">小米10 Pro</div>
+		 			<div class="brief">骁龙865 / 50倍变焦</div>
+		 			<div class="price">4999</div>
+		 			<div class="buyBtn"> 立即购买</div>
+		 		</div>
+		 	</div>
+		 </div>
+		 
+		 <!-- 底部
+		  .footer>(.fIcon+(.img+span))*4
+		  一个大框，里大框包4个放图片和4个文字
+		  -->
+		 <div class="footer">
+		 	<div class="fIcon"><div class="img"></div><span>首页</span></div>
+		 	<div class="fIcon"><div class="img"></div><span>分类</span></div>
+		 	<div class="fIcon"><div class="img"></div><span>购物车</span></div>
+		 	<div class="fIcon"><div class="img"></div><span>我的</span></div>
+		 </div>
+	</body>
+</html>
